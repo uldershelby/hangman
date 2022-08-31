@@ -1,46 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 :root {
-  --dark: rgb(20, 20, 20);
-  --light: rgb(255, 255, 255);
-  --bluelight: rgba(243, 245, 252, 1);
-  --bluedark: rgb(10, 56, 113);
+  --clr-btn: rgb(255, 255, 255);
+  --clr-body: rgba(243, 245, 252, 1);
+  --clr-primary: rgb(10, 56, 113);
 }
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-}
-
-body {
-  height: 100vh;
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 5rem);
 }
 
 .container {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240rem), 1fr));
   grid-auto-flow: dense;
-  /* grid-auto-rows: 22rem; */
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
-  height: calc(100% - 24.7725rem);
-  border: rgb(26, 243, 7) solid 0.125rem;
+  height: 100vh;
 }
 
 article:nth-child(1) {
-  border: none !important;
-  background-color: transparent !important;
-  outline: none;
-  margin: 0;
   padding: 1rem 0 0 0;
 }
 
 article:nth-child(2) {
-  grid-column: span 2;
-  align-self: baseline;
-  justify-self: center;
-  text-align: center;
+  width: clamp(21vw, 50%, 200rem);
+  margin: 0 auto;
 }
 
 .card2 p:not(#add-word) {
@@ -49,18 +36,19 @@ article:nth-child(2) {
 
 .btn-start-game {
   display: block;
-  width: 100%;
-  background-color: var(--bluedark);
-  color: var(--light);
+  width: clamp(16.66vw, 100%, 120rem);
+  padding-block: min(1.66vh, 80rem);
+  background-color: var(--clr-primary);
+  color: var(--clr-btn);
   border-radius: 1.5rem;
-  padding: 1.5rem;
 }
 
 .btn-add-word {
   display: block;
-  width: 100%;
-  background-color: var(--bluelight);
-  color: var(--bluedark);
+  width: clamp(16.66vw, 100%, 120rem);
+  padding-block: min(1.66vh, 80rem);
+  background-color: var(--clr-body);
+  color: var(--clr-primary);
   border-radius: 1.5rem;
-  padding: 1.5rem;
 }
+
