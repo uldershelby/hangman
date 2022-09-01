@@ -14,6 +14,10 @@
   font-size: clamp(1rem, 2.5vw, 5rem);
 }
 
+html {
+  height: 100%;
+}
+
 .page-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 240rem), 1fr));
