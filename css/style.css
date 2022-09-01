@@ -40,7 +40,6 @@ textarea {
   height: calc(
     100% - 0.625rem
   ) !important; /* fixes browser address bar scroll overflow on mobile */
-  height: -webkit-fill-available;
 }
 
 header:nth-child(1) {
