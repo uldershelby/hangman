@@ -14,6 +14,7 @@
   font-size: clamp(1rem, 2.5vw, 5rem);
 }
 
+html,
 body {
   height: 100%;
 }
@@ -31,8 +32,8 @@ header:nth-child(1) {
 
 section:nth-child(2) {
   width: clamp(21vw, 50%, 200rem);
+  height: 100%;
   margin: 0 auto;
-  bottom: calc(0.625rem + (100vh - 100%));
 }
 
 .btns-wrapper p:not(#add-word) {
