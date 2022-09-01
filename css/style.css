@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 :root {
-  --clr-btn: rgb(255, 255, 255);
   --clr-body: rgba(243, 245, 252, 1);
   --clr-primary: rgb(10, 56, 113);
+  --clr-btn: rgb(255, 255, 255);
 }
 
 * {
@@ -14,23 +14,27 @@
   font-size: clamp(1rem, 2.5vw, 5rem);
 }
 
-.container {
+body {
+  height: 100%;
+}
+
+.page-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 240rem), 1fr));
   grid-auto-flow: dense;
   height: 100vh;
 }
 
-article:nth-child(1) {
+header:nth-child(1) {
   padding: 1rem 0 0 0;
 }
 
-article:nth-child(2) {
+section:nth-child(2) {
   width: clamp(21vw, 50%, 200rem);
   margin: 0 auto;
 }
 
-.card2 p:not(#add-word) {
+.btns-wrapper p:not(#add-word) {
   padding: 0 0 1rem 0;
 }
 
@@ -51,4 +55,3 @@ article:nth-child(2) {
   color: var(--clr-primary);
   border-radius: 1.5rem;
 }
-
