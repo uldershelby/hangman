@@ -52,11 +52,7 @@ section:nth-child(2) {
   margin: 0 auto;
 }
 
-.btns-wrapper p:not(#add-word) {
-  padding: 0 0 1rem 0;
-}
-
-.btn-start-game {
+section:nth-child(2) button {
   display: block;
   width: clamp(16.66vw, 100%, 120rem);
   padding-block: min(1.66vh, 80rem);
@@ -65,11 +61,11 @@ section:nth-child(2) {
   border-radius: 1.5rem;
 }
 
-.btn-add-word {
-  display: block;
-  width: clamp(16.66vw, 100%, 120rem);
-  padding-block: min(1.66vh, 80rem);
+#btn-add-word {
   background-color: var(--clr-body);
   color: var(--clr-primary);
-  border-radius: 1.5rem;
+}
+
+section:nth-child(2) p:not(#add-word) {
+  padding: 0 0 1rem 0;
 }
