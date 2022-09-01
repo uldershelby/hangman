@@ -33,6 +33,7 @@ header:nth-child(1) {
 section:nth-child(2) {
   width: clamp(21vw, 50%, 200rem);
   margin: 0 auto;
+  bottom: calc(0.625rem + (100vh - 100%));
 }
 
 .btns-wrapper p:not(#add-word) {
