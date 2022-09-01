@@ -20,6 +20,7 @@ body {
 }
 
 body {
+  min-height: 100vh;
   font-size: clamp(1rem, 2.5vw, 5rem);
   line-height: 1.6;
   text-rendering: optimizeSpeed;
