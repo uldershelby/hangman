@@ -28,11 +28,11 @@ document.getElementById("btn-save").addEventListener(
     let element = document.getElementById("btn-new-game");
     let element2 = document.getElementById("btn-quit");
     let hidden = element.getAttribute("hidden");
-    document.getElementById("btn-save").style.visibility = "hidden";
-    document.getElementById("btn-cancel").style.visibility = "hidden";
+    document.getElementById("btn-save").style.display = "none";
+    document.getElementById("btn-cancel").style.display = "none";
     //document.getElementById("result").style.backgroundImage = "none";
     document.getElementById("header").innerHTML =
-      '<textarea id="add-word-textarea" role="textbox" placeholder="Type a word" autofocus required></textarea>';
+      '<canvas id="#canvas-draw"></canvas>';
     //document.getElementById("logo-alura").style.visibility = "visible";
 
     if (hidden) {

@@ -50,6 +50,7 @@ header:nth-child(1) {
   background-origin: content-box;
   width: clamp(16.66vw, 100%, 240rem);
   padding: min(1rem, 10%) 0 0 0;
+  margin: 0 0 min(4rem, 10%) 0;
   text-align: center;
 }
 
@@ -58,7 +59,7 @@ header:nth-child(1) textarea {
   height: 75%;
   padding-block: min(2.66vh, 80rem);
   padding: min(5rem, 75%) 0 0 0;
-  margin: 5rem 0 0 0;
+  margin: 3rem 0 0 0;
   color: var(--clr-primary);
   border: none;
   outline: none;
@@ -92,4 +93,8 @@ section p:nth-of-type(2n) button {
 
 section:nth-child(2) p:not(#add-word, #cancel) {
   padding: 0 0 1rem 0;
+}
+
+#canvas-draw {
+  width: clamp(16.66vw, 100%, 120rem);
 }
