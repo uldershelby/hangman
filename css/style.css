@@ -19,10 +19,10 @@ body {
 }
 
 body {
-  font-size: clamp(1rem, 2.5vw, 5rem);
-  text-rendering: optimizeSpeed;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
+  font-size: clamp(1rem, 2.5vw, 5rem);
+  text-rendering: optimizeSpeed;
 }
 
 button,
@@ -30,17 +30,44 @@ textarea {
   font: inherit;
 }
 
-.page-wrapper {
+button:hover {
+  cursor: pointer;
+}
+
+#page-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 240rem), 1fr));
   grid-auto-flow: dense;
-  height: calc(
-    100% - 0.625rem
-  ) !important; /* fixes browser address bar scroll overflow on mobile */
+  grid-auto-rows: fit-content;
+  height: calc(100% - 0.625rem) !important;
+  /* fixes browser address bar scroll overflow on mobiles */
 }
 
 header:nth-child(1) {
-  padding: 1rem 0 0 0;
+  background-image: url(../img/Logo.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-origin: content-box;
+  width: clamp(16.66vw, 100%, 240rem);
+  padding: min(1rem, 10%) 0 0 0;
+  text-align: center;
+}
+
+header:nth-child(1) textarea {
+  width: clamp(16.66vw, 50%, 120rem);
+  height: 70%;
+  padding-block: min(2.66vh, 80rem);
+  padding: min(5rem, 75%) 0 0 0;
+  margin: 5rem 0 0 0;
+  color: var(--clr-primary);
+  border: solid 1px;
+  outline: none;
+  resize: none;
+  overflow-x: hidden;
+}
+
+header:nth-child(1) textarea::placeholder {
+  color: var(--clr-primary);
 }
 
 section:nth-child(2) {
@@ -49,19 +76,18 @@ section:nth-child(2) {
 }
 
 section:nth-child(2) button {
-  display: block;
   width: clamp(16.66vw, 100%, 120rem);
-  padding-block: min(1.66vh, 80rem);
+  padding-block: min(2.66vh, 80rem);
   background-color: var(--clr-primary);
   color: var(--clr-btn);
   border-radius: 1.5rem;
 }
 
-#btn-add-word {
-  background-color: var(--clr-body);
-  color: var(--clr-primary);
+section:nth-child(2) p:not(#add-word, #cancel) {
+  padding: 0 0 1rem 0;
 }
 
-section:nth-child(2) p:not(#add-word) {
-  padding: 0 0 1rem 0;
+section p:nth-of-type(2n) button {
+  background-color: var(--clr-body) !important;
+  color: var(--clr-primary) !important;
 }
