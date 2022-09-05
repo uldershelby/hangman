@@ -1,11 +1,3 @@
-addEventListener("load", () => {
-  let viewport = document.querySelector("meta[name=viewport]");
-  viewport.setAttribute(
-    "content",
-    viewport.content + ", height=" + window.innerHeight
-  );
-});
-
 document.getElementById("btn-add-word").addEventListener(
   "click",
   () => {
