@@ -76,6 +76,7 @@ section:nth-child(2) {
 }
 
 section:nth-child(2) button {
+  visibility: unset;
   width: clamp(16.66vw, 100%, 120rem);
   padding-block: min(2.66vh, 80rem);
   background-color: var(--clr-primary);
@@ -84,6 +85,7 @@ section:nth-child(2) button {
 }
 
 section p:nth-of-type(2n) button {
+  visibility: unset;
   background-color: var(--clr-body) !important;
   color: var(--clr-primary) !important;
 }
