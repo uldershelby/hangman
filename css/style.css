@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-/* fixes browser address bar scroll overflow on mobile */
+/* fixes browser address bar scroll overflow on mobiles */
 html,
 body {
   height: 100%;
@@ -34,7 +34,7 @@ button:hover {
   cursor: pointer;
 }
 
-#page-wrapper {
+main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 240rem), 1fr));
   grid-auto-flow: dense;
@@ -54,10 +54,10 @@ header:nth-child(1) {
   text-align: center;
 }
 
-#add-word-textarea {
+header:nth-child(1) textarea {
   visibility: unset;
   width: clamp(16.66vw, 50%, 120rem);
-  height: 75%;
+  height: 50%;
   padding-block: min(2.66vh, 80rem);
   padding: min(5rem, 8.33vw) 0 0 0;
   margin: min(7rem, 14vw) 0 0 0;
@@ -70,7 +70,7 @@ header:nth-child(1) {
   overflow-x: hidden;
 }
 
-section:nth-child(1) textarea::placeholder {
+header:nth-child(1) textarea::placeholder {
   color: var(--clr-primary);
 }
 

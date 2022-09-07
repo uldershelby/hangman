@@ -23,7 +23,7 @@ document.getElementById("btn-add-word").addEventListener(
 
 let filter = document.getElementById("add-word-textarea");
 filter.addEventListener("keyup", function () {
-  this.value = this.value.replace(/[^a-z]/g, "");
+  this.value = this.value.replace(/[^a-z]/g, "").slice(0, 8);
 });
 
 document.getElementById("btn-save").addEventListener(

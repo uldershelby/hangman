@@ -11,29 +11,31 @@
 </head>
 
 <body>
-    <main id="page-wrapper" role="main">
+    <main role="main">
         <header id="header" role="heading">
-            <textarea id="add-word-textarea" name="addword" role="textbox" placeholder="Type a word"
-                hidden="hidden"></textarea>
+            <textarea id="add-word-textarea" role="textbox" name="textarea" placeholder="Type a word" hidden="hidden"
+                autofocus></textarea>
         </header>
-        <section id="btn-container" role="region">
+        <section role="region">
             <p id="start-game">
-                <button role="button" type="button" id="btn-start-game">Start game</button>
+                <button role="button" type="button" id="btn-start-game" name="button-start">Start game</button>
             </p>
             <p id="add-word">
-                <button role="button" type="button" id="btn-add-word">Add new word</button>
+                <button role="button" type="button" id="btn-add-word" name="button-add-word">Add new word</button>
             </p>
             <p id="save">
-                <button role="button" type="button" id="btn-save" hidden="hidden">Save & Start</button>
+                <button role="button" type="button" id="btn-save" name="button-save" hidden="hidden">Save &
+                    Start</button>
             </p>
             <p id="cancel">
-                <button role="button" type="button" id="btn-cancel" hidden="hidden">Cancel</button>
+                <button role="button" type="button" id="btn-cancel" name="button-cancel" hidden="hidden">Cancel</button>
             </p>
             <p id="new-game">
-                <button role="button" type="button" id="btn-new-game" hidden="hidden">New game</button>
+                <button role="button" type="button" id="btn-new-game" name="button-new-game" hidden="hidden">New
+                    game</button>
             </p>
             <p id="quit">
-                <button role="button" type="button" id="btn-quit" hidden="hidden">Quit</button>
+                <button role="button" type="button" id="btn-quit" name="button-quit" hidden="hidden">Quit</button>
             </p>
         </section>
     </main>
