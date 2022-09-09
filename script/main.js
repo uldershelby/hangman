@@ -31,17 +31,21 @@ document.getElementById("btn-save").addEventListener(
   () => {
     let element = document.getElementById("btn-new-game");
     let element2 = document.getElementById("btn-quit");
+    let element3 = document.getElementById("keyboard");
     let hidden = element.getAttribute("hidden");
 
     document.getElementById("btn-save").style.display = "none";
     document.getElementById("btn-cancel").style.display = "none";
+    document.getElementById("add-word-textarea").style.display = "none";
 
     if (hidden) {
       element.removeAttribute("hidden");
       element2.removeAttribute("hidden");
+      element3.removeAttribute("hidden");
     } else {
       element.setAttribute("hidden", "hidden");
       element2.setAttribute("hidden", "hidden");
+      element3.setAttribute("hidden", "hidden");
     }
     secretWordLines();
   },

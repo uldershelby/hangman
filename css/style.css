@@ -133,7 +133,7 @@ section:nth-child(2) p:not(#add-word, #cancel, #quit) {
 #keyboard {
   width: clamp(32vw, 100%, 30rem);
   padding: min(70.7vh, 19.2rem) 0 min(1vh, 1rem) 0;
-  margin: min(2vw, 2rem) auto;
+  margin: 0 auto;
 }
 
 .btn-keyboard {
