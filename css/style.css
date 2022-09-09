@@ -75,6 +75,12 @@ header:nth-child(1) textarea::placeholder {
   color: var(--clr-primary);
 }
 
+header div:nth-of-type(2n) button {
+  margin: 0.05rem;
+  background-color: var(--clr-primary) !important;
+  color: var(--clr-body) !important;
+}
+
 section:nth-child(2) {
   width: clamp(21vw, 50%, 200rem);
   margin: 0 auto;
