@@ -44,6 +44,7 @@ main {
 }
 
 header:nth-child(1) {
+  display: flex;
   background-image: url(../img/Logo.svg);
   background-repeat: no-repeat;
   background-position: top left;
@@ -52,6 +53,7 @@ header:nth-child(1) {
   padding: min(1rem, 1.66vw) 0 0 0;
   margin: 0 0 min(4rem, 7vw) 0;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 header:nth-child(1) textarea {
@@ -85,7 +87,7 @@ section:nth-child(2) button {
   padding-block: min(2.66vh, 80rem);
   background-color: var(--clr-primary);
   color: var(--clr-btn);
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 section p:nth-of-type(2n) button {
@@ -98,6 +100,49 @@ section:nth-child(2) p:not(#add-word, #cancel, #quit) {
   padding: 0 0 1rem 0;
 }
 
-canvas {
-  width: clamp(16.66vw, 100%, 120rem);
+/* canvas {
+  width: clamp(16.625vw, 75%, 120rem);
+}
+*/
+
+#secretword {
+  visibility: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: clamp(1.56vw, 100%, 5rem); */
+  /* padding-block: min(2.66vh, 80rem); */
+  width: 100%;
+  gap: 15px;
+}
+
+#secretword .letterplace {
+  border-bottom: 4px solid var(--clr-primary);
+  width: 100%;
+  padding: 10px 0;
+  background: var(--clr-body);
+  max-width: 90px;
+  margin: 0;
+
+  font-size: 32px;
+  min-height: 80px;
+
+  display: grid;
+  place-content: center;
+}
+
+#keyboard {
+  width: clamp(32vw, 100%, 30rem);
+  padding: min(70.7vh, 19.2rem) 0 min(1vh, 1rem) 0;
+}
+
+.btn-keyboard {
+  background: none;
+  width: clamp(3vw, 100%, 2.5rem);
+  height: clamp(3vw, 100%, 2.5rem);
+  border-width: 0.125rem;
+  border-radius: 0.5rem;
+  border-color: var(--clr-primary);
+  color: var(--clr-primary);
+  font-size: clamp(2vw, 32px, 1.5rem);
 }
