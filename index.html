@@ -15,6 +15,7 @@
         <header id="header" role="heading">
             <textarea id="add-word-textarea" role="textbox" name="textarea" placeholder="Type a word"
                 hidden="hidden"></textarea>
+            <canvas id="canvas" role="canvas" name="canvas" hidden="hidden"></canvas>
             <div id="secretword" role="text" hidden="hidden"></div>
             <div id="keyboard" role="group" hidden="hidden">
                 <button type="button" role="button" class="btn-keyboard" id="keyQ" onclick="keyIn('Q')">Q</button>
@@ -46,8 +47,7 @@
             </div>
 
         </header>
-        <section role="region">
-            <input type="text" id="guess-word" name="guess-word" role="textbox" hidden="hidden">
+        <section role="region" name="buttons">
             <p id="start-game">
                 <button role="button" type="button" id="btn-start-game" name="button-start">Start game</button>
             </p>

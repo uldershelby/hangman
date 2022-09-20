@@ -102,38 +102,38 @@ section:nth-child(2) p:not(#add-word, #cancel) {
   padding: 0 0 1rem 0;
 }
 
-/* canvas {
-  width: clamp(16.625vw, 75%, 120rem);
+canvas {
+  padding: 0 0 0 8rem;
+  width: clamp(50vw, 100%, 90rem);
+  /* padding-top: clamp(1.6vw, 50%, 5rem);
+  padding-left: clamp(1.6vw, 50%, 5rem); */
 }
-*/
 
 #secretword {
-  visibility: unset;
   display: flex;
   align-items: center;
   justify-content: center;
   /* width: clamp(1.56vw, 100%, 5rem); */
   /* padding-block: min(2.66vh, 80rem); */
-  width: 100%;
-  gap: 15px;
+  gap: 0.3rem;
 }
 
-#secretword .letterplace {
-  display: grid;
-  place-content: center;
+#letterplace {
   background: var(--clr-body);
+  color: var(--clr-primary);
   border-bottom: 0.25rem solid var(--clr-primary);
   width: 100%;
   padding: 0.625rem 0;
-  max-width: 5.625rem;
+  max-width: 5rem;
   min-height: 5rem;
   margin: 0;
-  font-size: 2rem;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 #keyboard {
   width: clamp(32vw, 100%, 30rem);
-  padding: calc(100% - 0.3rem) 0 min(1vh, 1rem) 0;
+  padding: 0 0 min(1vh, 1rem) 0;
   margin: 0 auto;
 }
 
