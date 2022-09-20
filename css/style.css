@@ -103,7 +103,7 @@ section:nth-child(2) p:not(#add-word, #cancel) {
 }
 
 canvas {
-  padding: 0 0 0 8rem;
+  padding: 4rem 0 0 8rem;
   width: clamp(50vw, 100%, 90rem);
   /* padding-top: clamp(1.6vw, 50%, 5rem);
   padding-left: clamp(1.6vw, 50%, 5rem); */
@@ -113,8 +113,7 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: clamp(1.56vw, 100%, 5rem); */
-  /* padding-block: min(2.66vh, 80rem); */
+  padding-block: min(1.66vh, 80rem);
   gap: 0.3rem;
 }
 
@@ -125,10 +124,8 @@ canvas {
   width: 100%;
   padding: 0.625rem 0;
   max-width: 5rem;
-  min-height: 5rem;
+  min-height: 3.5rem;
   margin: 0;
-  font-family: inherit;
-  font-size: inherit;
 }
 
 #keyboard {
